@@ -1,0 +1,17 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample Alphabet stock data
+data = {
+    'Date': pd.date_range(start='2023-01-01', periods=5),
+    'Close_Price': [95, 98, 97, 100, 102]
+}
+
+df = pd.DataFrame(data)
+
+# Plot
+plt.plot(df['Date'], df['Close_Price'])
+plt.xlabel("Date")
+plt.ylabel("Stock Price")
+plt.title("Alphabet Inc. Stock Price Trend")
+plt.show()
