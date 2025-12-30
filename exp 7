@@ -1,0 +1,13 @@
+import pandas as pd
+
+data = {
+    'Item': ['Television','Home Theater','Television','Cell Phone'],
+    'Sale_amt': [113810, 25000, 43128, 6075]
+}
+
+df = pd.DataFrame(data)
+
+pivot = pd.pivot_table(df, values='Sale_amt', index='Item',
+                       aggfunc=['min','max'])
+
+print(pivot)
