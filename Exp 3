@@ -1,0 +1,21 @@
+import pandas as pd
+
+# Create DataFrame
+data = {
+    'JOB_ID': ['AD_PRES','AD_VP','AD_ASST','FI_MGR','FI_ACCOUNT',
+               'AC_MGR','AC_ACCOUNT','SA_MAN','SA_REP'],
+    'JOB_TITLE': ['President','Administration Vice President',
+                  'Administration Assistant','Finance Manager',
+                  'Accountant','Accounting Manager',
+                  'Public Accountant','Sales Manager',
+                  'Sales Representative'],
+    'MIN_SALARY': [20080,15000,3000,8200,4200,8200,4200,10000,6000],
+    'MAX_SALARY': [40000,30000,6000,16000,9000,16000,9000,20080,12008]
+}
+
+df = pd.DataFrame(data)
+
+# Sort by JOB_TITLE in descending order
+sorted_jobs = df.sort_values(by='JOB_TITLE', ascending=False)
+
+print(sorted_jobs)
