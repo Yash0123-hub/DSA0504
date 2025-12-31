@@ -1,0 +1,10 @@
+import pandas as pd
+
+df = pd.DataFrame({
+    'school_code': ['S001','S002','S001','S003'],
+    'name': ['John','Alice','Bob','David'],
+    'age': [15, 16, 15, 17]
+})
+
+grouped = df.groupby('school_code')
+print(type(grouped))
