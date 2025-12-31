@@ -1,0 +1,9 @@
+import pandas as pd
+
+df = pd.DataFrame({
+    'Name': ['Anastasia','Dima','Katherine','James']
+})
+
+# Find index of substring 'er'
+result = df['Name'].str.find('er')
+print(result)
