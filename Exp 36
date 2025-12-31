@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+
+group1_h = [150, 155, 160]
+group1_w = [50, 55, 60]
+
+group2_h = [165, 170, 175]
+group2_w = [65, 70, 75]
+
+group3_h = [180, 185, 190]
+group3_w = [80, 85, 90]
+
+plt.scatter(group1_h, group1_w, label='Group 1')
+plt.scatter(group2_h, group2_w, label='Group 2')
+plt.scatter(group3_h, group3_w, label='Group 3')
+
+plt.xlabel("Height")
+plt.ylabel("Weight")
+plt.title("Height vs Weight Comparison")
+plt.legend()
+plt.show()
