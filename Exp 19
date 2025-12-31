@@ -1,0 +1,13 @@
+import pandas as pd
+
+# Sample dataset
+df = pd.DataFrame({
+    'Year': [1986, 1987],
+    'WHO_region': ['Americas','Europe'],
+    'Country': ['USA','France'],
+    'Beverage': ['Wine','Beer'],
+    'Value': [1.2, 2.5]
+})
+
+print("Shape:", df.shape)
+print("Columns:", df.columns)
